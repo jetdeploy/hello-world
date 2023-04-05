@@ -1,0 +1,35 @@
+.*
+!.stylintrc
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.python-version
+!.vscode
+!.env*
+*.tar
+*.rar
+*.zip
+__pycache__
+*.py[cod]
+celerybeat-schedule
+celerybeat.pid
+_dist
+_misc
+*.rdb
+Thumbs.db
+
+# asset files
+/staticfiles
+/media
+
+# npm modules folders
+node_modules
+
+# Log files
+*.log
+
+# Docker
+!.dockerignore
+
+# GitLab CI
+!.gitlab-ci.yml
