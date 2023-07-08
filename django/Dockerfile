@@ -1,5 +1,5 @@
 FROM python:3.11
-LABEL maintainer="JetDeploy Team"
+LABEL maintainer="JetDeploy"
 
 ENV PYTHONUNBUFFERED=1
 
