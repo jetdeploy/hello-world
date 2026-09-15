@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello from Django on JetDeploy</title>
+  <link rel="stylesheet" href="{% static 'counter/style.css' %}" />
+</head>
+
+<body>
+  <main class="card">
+    <div class="badge">JetDeploy example: Django</div>
+
+    <h1>Django, talking to PostgreSQL</h1>
+
+    <p>
+      This page has been requested <strong>{{ count }}</strong> time{{ count|pluralize }},
+      each one stored as a row in the <code>counter_visit</code> table.
+    </p>
+  </main>
+</body>
+</html>
