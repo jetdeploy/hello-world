@@ -23,7 +23,7 @@ deploy it as-is.
   `/etc/nginx/conf.d` to the `nginx` user (uid 101) so the master process can run as `USER nginx`
   without needing to bind a privileged port (`8080` already isn't one).
 - **Logs**: the base image already symlinks nginx's access and error logs to `/dev/stdout` and
-  `/dev/stderr`, so `GET /api/v1/apps/{app_id}/runtime-logs/tail` sees them. nginx has no per-line
+  `/dev/stderr`, so `GET /api/v1/apps/{app_id}/logs/tail` sees them. nginx has no per-line
   level, so JetDeploy's level filter treats these lines as unclassified; that's expected for a
   pure static site.
 

@@ -65,8 +65,8 @@ over OAuth) and as `curl` calls against the API (`https://jetdeploy.com/api/v1`,
    operation.
 6. **Poll the operation** — MCP `get_operation`, or `GET /api/v1/operations/{id}`, until
    `is_finished` is `true` and `status` is `SUCCESS`. Build logs: MCP `get_app_deploy_logs`, or
-   `GET /api/v1/apps/{app_id}/deploy-logs/tail`. Runtime logs: MCP `get_app_runtime_logs`, or
-   `GET /api/v1/apps/{app_id}/runtime-logs/tail`.
+   `GET /api/v1/apps/{app_id}/deploy-logs/tail`. App logs: MCP `get_app_logs`, or
+   `GET /api/v1/apps/{app_id}/logs/tail`.
 7. **The app answers at its `url`.**
 
 Every app that needs one (PostgreSQL, MariaDB, Redis, OpenSearch, RabbitMQ) is created with MCP
